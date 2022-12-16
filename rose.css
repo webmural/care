@@ -1,26 +1,30 @@
+:root {
+  --rose: turquoise;
+  --eros: indigo;
+}
+
+:any-link {
+  color: inherit;
+  text-decoration-color: snow;
+}
+
+::selection {
+  background: purple;
+  color: aqua;
+}
+
 .rose {
-  --rose: pink;
   background: var(--rose);
-  color: #111;
+  color: var(--eros);
 }
 
-.rose ::selection {
-  background: #111;
+.eros {
+  background: var(--eros);
   color: var(--rose);
-}
-
-.rose :any-link {
-  color: indigo;
-}
-
-@media (prefers-contrast: less) {
-  .rose {
-    --rose: lightpink;
-  }
 }
 
 @media (prefers-contrast: more) {
   .rose {
-    --rose: mistyrose;
+    --rose: #bea;
   }
 }
