@@ -1,9 +1,36 @@
 html {
-  font-size: max(20pt, 2vw);
+  font-size: max(20pt, 20vmin);
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow-wrap: anywhere;
+  text-transform: uppercase;
+  transform: rotate(-1deg);
+}
+
+cite {
+  all: unset;
+}
+
+nav {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+nav a {
+  display: table;
+}
+
+:hover {
+  text-decoration-style: double;
 }
 
 :focus {
-  outline-style: dotted;
-  outline-width: thick;
-  outline-color: currentColor;
+  outline: thick dotted;
 }
